@@ -23,11 +23,14 @@ public class Ejercicio21 {
         System.out.println("Porfavor, introduzca el numero de segundos: ");
         segundos = entrada.nextInt();
         
-        int dias = segundos / 864000;
-        int horas = segundos / 24;
-        int minutos = horas / 1440;
+        int dias = segundos / 86400;
+        int resto = segundos % 86400;
+        int horas = resto / 3600;
+        resto = resto % 3600;
+        int minutos = resto / 60;
+        int segundostotales = resto % 60;
          
-        System.out.println(segundos + " hacen un total de: " + dias + " dias, " + horas + " horas, " + minutos + " minutos y " + segundos);
+        System.out.println(segundos + " hacen un total de: " + dias + " dias, " + horas + " horas, " + minutos + " minutos y " + segundostotales);
         
         // TODO code application logic here
     }
