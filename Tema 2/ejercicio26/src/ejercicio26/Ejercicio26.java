@@ -16,13 +16,17 @@ public class Ejercicio26 {
      */
     public static void main(String[] args) {
         
+        //declaro las variables
         int numero, primeracif, segundacif, terceracif, cuartacif;
         
+        //declaro el scanner
         Scanner entrada =  new Scanner (System.in);
         
+        //le pido al usuario el numero
         System.out.println("Introduzca un numero de 4 cifras");
         numero = entrada.nextInt();
         
+        //lo descompongo
         primeracif = numero / 1000;
         System.out.println("La primera cifra es: " + primeracif);
         

@@ -2,32 +2,35 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package ejercicio23;
+package ejercicio1;
 import java.util.Scanner;
-
 /**
  *
  * @author alumno
  */
-public class Ejercicio23 {
+public class Ejercicio1 {
+    
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         
-        double precio;
-        int unidades;
+        //declaro la variable
+        int numero;
         
+        //declaro el scanner para leer el dato introducido por el usuario
         Scanner entrada = new Scanner (System.in);
-        System.out.println("Porfavor, introduzca el precio del modelo de ordenador que desea comprar: ");
-        precio = entrada.nextDouble();
-        System.out.println("¿Cuantas unidades quiere llevarse? ");
-        unidades = entrada.nextInt();
         
-        double total=precio*unidades;
-        System.out.println("El precio total de su compra es de: " + total + " euros");
+        System.out.println("Porfavor introduzca un numero");
+        numero =entrada.nextInt();
         
+        if (numero >= 0) {
+            System.out.println("El numero introducido es positivo");
+        }
+        else {
+            System.out.println("El numero introducido es negativo");
+        }
         // TODO code application logic here
     }
     
