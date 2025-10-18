@@ -4,6 +4,7 @@
  */
 package ejercicio27;
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 
 /**
@@ -22,27 +23,28 @@ public class Ejercicio27 {
         
          //declaro el scanner
         Scanner entrada =  new Scanner (System.in);
-        
-         
-        
-        //declaro la variable con la que el usuario va a elegir la opcion
-        int opcion;
+       
+        //declaro la variable con la que el usuario va a elegir la opcion, la inicializo a 0 porque sino me da un fallo
+        int opcion = 0;
         
         //hago el menu
         do{
+        
+        //defino el try para que si el usuario introduce una letra en vez de un numero no se pare el programa
+        try {
         //le pido al usuario el primer numero
-        System.out.println("Introduce el primero numero: ");
-        num1 = entrada.nextInt();
+            System.out.println("Introduce el primero numero: ");
+            num1 = entrada.nextInt();
         
-         //le pido al usuario el segunfo numero
-        System.out.println("IIntroduce el segundo numero: ");
-        num2 = entrada.nextInt();
-        
-        //inicializo las variables de operaciones
+        //le pido al usuario el segunfo numero
+            System.out.println("Introduce el segundo numero: ");
+            num2 = entrada.nextInt();
+            
+            //inicializo las variables de operaciones
         resultadosuma = num1 + num2;
         resultadoresta = num1 - num2;
         resultadomultiplicacion = num1 * num2;
-        resultadodivision = num1 / num2;
+        
             System.out.println("Opcion 1: Suma");
             System.out.println("Opcion 2: Resta");
             System.out.println("Opcion 3: Multiplicacion");
@@ -53,15 +55,26 @@ public class Ejercicio27 {
             switch (opcion){
                 case 1: {
                 System.out.println(resultadosuma);
+                break;
                 }
                 case 2: {
                 System.out.println(resultadoresta);
+                break;
                 }
                 case 3: {
                 System.out.println(resultadomultiplicacion);
+                break;
                 }
                 case 4: {
+                    try {
+                        resultadodivision = num1 / num2;
+                    }
+                    catch (ArithmeticException e) {
+                        System.out.println("Error " + e.getMessage());
+                        resultadodivision = 0;
+                    }
                 System.out.println(resultadodivision);
+                break;
                 }
                 case 5: {
                 break;
@@ -71,6 +84,11 @@ public class Ejercicio27 {
                 }
             
             }
+        } catch (InputMismatchException e) {
+            System.out.print("Error, el numero que has introducido no es entero");
+            entrada.nextLine(); // limpiar el buffer del scanner
+        }
+        
         } while (opcion != 5);
         
         // TODO code application logic here
