@@ -85,7 +85,7 @@ public class Ejercicio27 {
             
             }
         } catch (InputMismatchException e) {
-            System.out.print("Error, el numero que has introducido no es entero");
+            System.out.print("Error, el numero que has introducido no es entero ");
             entrada.nextLine(); // limpiar el buffer del scanner
         }
         
