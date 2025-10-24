@@ -18,8 +18,7 @@ public class Ejercicio21 {
     public static void main(String[] args) {
         
         //declaro las variables
-        int num1, num2;
-        float result;
+        int num1, num2, result;
         
         //declaro el escaner
         Scanner entrada = new Scanner (System.in);
