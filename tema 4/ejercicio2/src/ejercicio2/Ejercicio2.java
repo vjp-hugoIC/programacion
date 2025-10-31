@@ -4,7 +4,6 @@
  */
 package ejercicio2;
 import java.util.Scanner;
-import utilidades.utilidades;
 /**
  *
  * @author alumno
@@ -15,12 +14,15 @@ public class Ejercicio2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-         Scanner entrada = new Scanner(System.in);
-         
-         System.out.println("Por favor, introduzca un numero: ");
-         double num1 = scanner.nextInt();
+         // Programa que pide dos números al usuario; si el primero es mayor que 10, los multiplica, y si no, los suma. 
+        //Las operaciones se realizan mediante métodos en una clase separada del mismo paquete.
+
+        // Llamamos al método calculadora() que está en la otra clase
+        utilidades.calculadora();
+
+    }
+}
         
         // TODO code application logic here
-    }
     
-}
+   
