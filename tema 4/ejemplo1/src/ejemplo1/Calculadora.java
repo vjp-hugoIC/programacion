@@ -61,4 +61,21 @@ public class Calculadora {
         return Math.sqrt(num1);
     }
     
+    /**
+     * Metodo para calcular el cuadrado de un numero pasado por parametro
+     * @param num1
+     * @return el cuadrado
+     */
+    public static double cuadrado(int num1) {
+     return Math.pow(num1, 2);
+    }
+    
+    /**
+     * Metodo para calcular el cubo de un numero pasado por parametro
+     * @param num1
+     * @return el cubo
+     */
+    public static double cubo(int num1) {
+     return Math.pow(num1, 3);
+    }
 }

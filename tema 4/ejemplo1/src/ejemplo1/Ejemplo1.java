@@ -81,6 +81,12 @@ public class Ejemplo1 {
         System.out.println("Ha sucedido una excepcion aritmetica");
         } 
         
+        resultado = Calculadora.cuadrado(num1);
+        System.out.println("El cuadrado de " + num1 + " es " + resultado);
+        
+        resultado = Calculadora.cubo(num1);
+        System.out.println("El cubo de " + num1 + " es " + resultado);
+        
         // TODO code application logic here
     }
     

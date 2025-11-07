@@ -17,13 +17,14 @@ public class Ejercicio14 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-          int numero = pedirNumero(); // 1. Pedimos el número
-        while (!esMayorQueCero(numero)) { // 2. Validamos que sea > 0
+        // 1. Pedimos el número al usuario y validamos que sea > 0
+          int numero = pedirNumero(); 
+        while (!esMayorQueCero(numero)) { 
             System.out.println("Error: el número debe ser mayor que 0.");
             numero = pedirNumero();
         }
-
-        mostrarMultiplosDeTres(numero); // 3. Mostramos resultados
+        // 3. Mostramos los resultados
+        mostrarMultiplosDeTres(numero); 
     }
 
     // Método para pedir un número al usuario
