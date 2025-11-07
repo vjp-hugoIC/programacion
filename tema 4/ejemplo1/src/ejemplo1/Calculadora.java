@@ -79,7 +79,41 @@ public class Calculadora {
      return Math.pow(num1, 3);
     }
       
+    /**
+     * Para calcular el maximo de numeros pasados por parametro
+     * @param num1
+     * @param num2
+     * @return el maximo
+     */
     public static double maximo(int num1, int num2) {
      return Math.max(num1, num2);
+    }
+    
+    /**
+     * Para calcular el minimo pasado por parametros
+     * @param num1
+     * @param num2
+     * @return El minimo
+     */
+    public static double minimo(int num1, int num2) {
+     return Math.min(num1, num2);
+    }
+    
+    /**
+     * Para calcular al alza pasado por parametros
+     * @param num1
+     * @return  el alza
+     */
+    public static double alza(int num1) {
+     return Math.ceil(num1);
+    }
+    
+    /**
+     * Para calcular a la baja pasado por parametros
+     * @param num1
+     * @return a la baja
+     */
+    public static double baja(int num1) {
+     return Math.floor(num1);
     }
 }
