@@ -87,6 +87,13 @@ public class Ejemplo1 {
         resultado = Calculadora.cubo(num1);
         System.out.println("El cubo de " + num1 + " es " + resultado);
         
+        resultado = Calculadora.maximo(num1, num2);
+        System.out.println("El resultado es " + resultado);
+        
+        System.out.println("Letra aleatoria: " + utilidadesjava.letraAleatoria());
+        
+        
+        
         // TODO code application logic here
     }
     

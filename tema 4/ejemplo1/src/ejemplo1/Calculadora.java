@@ -78,4 +78,8 @@ public class Calculadora {
     public static double cubo(int num1) {
      return Math.pow(num1, 3);
     }
+      
+    public static double maximo(int num1, int num2) {
+     return Math.max(num1, num2);
+    }
 }

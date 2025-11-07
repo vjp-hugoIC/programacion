@@ -25,5 +25,10 @@ public class utilidadesjava {
         return num;
     
     }
+    public static String letraAleatoria() {
+        int numero = (int)(Math.random() * 26) + 97;  // genera un número entre 97 y 122
+        String letra = "" + (char)numero;             // convierte el número ASCII en letra
+        return letra;
+    }
     
 }
