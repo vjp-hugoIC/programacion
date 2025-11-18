@@ -53,16 +53,13 @@ public class Ejemplo1 {
         //System.out.println(bicicleta.getNumBicicletas());
         
         //PASO DE PARAMETROS POR VALOR 0 POR PREFERENCIA
-        int num1 = 4;
-        System.out.println(suma(num1));
+        //int num1 = 4;
+        //System.out.println(suma(num1));
         
         Bicicleta bici = new Bicicleta();
         empezarAPedalear(bici);
         
     }
-    
-    
-    
     
         public static int suma(int num1) {
         int num2 = 3;
