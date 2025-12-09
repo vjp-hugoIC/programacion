@@ -38,7 +38,8 @@ public class Hulk extends Superheroe {
     public void setFuerzaBruta(int fuerzaBruta) {
         this.fuerzaBruta = fuerzaBruta;
     }
-
+    
+    
     // MÉTODOS
     @Override
     public void entrenar() {

@@ -8,7 +8,7 @@ package ejemplo1;
  *  Ninguna clase puede heredar de una clase final.
  * @author alumno
  */
-public class InstructorHeredado extends Instructor {
+//public class InstructorHeredado extends Instructor {
     // ATRIBUTOS
 
 
@@ -22,4 +22,4 @@ public class InstructorHeredado extends Instructor {
 
 
     // TO STRING
-}
+//}

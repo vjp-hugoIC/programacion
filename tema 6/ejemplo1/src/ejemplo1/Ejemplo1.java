@@ -34,20 +34,20 @@ public class Ejemplo1 {
         
         // ¡IMPORTANTE! No podemos crear objetos de clases abstractas;
         // tenemos que instanciar objetos de las subclases.       
-//        superheroe = new Superheroe("Batman");
+        //superheroe = new Superheroe("Batman");
 
         // POLIMORFISMO
         // 2. Guardamos en una variable de la superclase
         // un objeto de cada subclase (uno Hulk y otro Flash).
         
         // 3. La misma expresión superheroe.entrenar() se comporta de forma distinta
-//        superheroe = new Hulk("Hulk", 600);
-//        superheroe.entrenar();
+        superheroe = new Hulk("Hulk", 600);
+        superheroe.entrenar();
         
-//        superheroe = new Flash("Flash", 3000);
-//        superheroe.entrenar();
+        superheroe = new Flash("Flash", 3000);
+        superheroe.entrenar();
         
-        
+
         
         // 4. Desde Superheroe no podemos llamar a métodos de las subclases
 //        superheroe.dejarEstela();
