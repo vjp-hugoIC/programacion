@@ -16,7 +16,7 @@ package ejemplo1;
  *
  * @author alumno
  */
-public class Flash extends Superheroe {
+public class Flash extends Superheroe implements SuperVelocidad{
     // ATRIBUTOS
     private int velocidadMaxima;
 
@@ -56,6 +56,18 @@ public class Flash extends Superheroe {
         System.out.println("             //");
         System.out.println("            /");
     }
+    
+    @Override
+    public void correrRapido(int velocidad) {
+        if(velocidad < velocidadMaxima) {
+            System.out.println("");
+        }
+    }
+    
+    //@Override
+    // public void atravesarObjetos(String objeto) {
+    //    if()
+    //}
 
     // TO STRING
     @Override
@@ -64,5 +76,7 @@ public class Flash extends Superheroe {
                 "\n · Nombre: " + super.getNombre() +
                 "\n · Velocidad Máxima:" + velocidadMaxima;
     }
+
+   
     
 }

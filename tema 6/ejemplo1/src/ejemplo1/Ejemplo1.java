@@ -64,6 +64,10 @@ public class Ejemplo1 {
         // 7. Podemos cambiar de cajita a los superhéroes usando casting
 //        flash = (Flash)superheroe;
 //        System.out.println(flash);
+
+        Flash flash = new Flash("Flash", 100);
+        flash.atravesarObjetos("Edificio");
+        flash.correrRapido(800);
         
         // TODO code application logic here
     }
