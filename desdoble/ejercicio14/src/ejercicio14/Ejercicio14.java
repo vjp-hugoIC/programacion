@@ -10,7 +10,7 @@ package ejercicio14;
  */
 public class Ejercicio14 {
     
-    static double PI = 3.14;
+     public static final double PI = 3.14;
 
     /**
      * @param args the command line arguments
