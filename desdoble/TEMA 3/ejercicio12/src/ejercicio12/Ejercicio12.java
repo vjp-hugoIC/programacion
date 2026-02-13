@@ -20,12 +20,12 @@ public class Ejercicio12 {
         
         //Utilizando un do while busco los numeros pares del 11 al 133
         do {
-            num++;
+             
             if ((num % 2) == 0){
             System.out.println(num);
-            } 
-            
-        } while (num <= 133);
+            }    
+            num++;
+        }  while (num <= 133);
         
     }
     

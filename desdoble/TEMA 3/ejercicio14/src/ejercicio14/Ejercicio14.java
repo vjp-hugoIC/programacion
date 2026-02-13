@@ -17,15 +17,16 @@ public class Ejercicio14 {
         
         //Declaro las variables
         int num = 0;
+        int contador = 0;
         
-        do {
-            num++;
-            if ((num % 2) == 0) {
+        while (contador <= 100) {
+             if ((num % 2) == 0) {
                 System.out.println(num);
+                contador++;
             }
-        } while (num <= 100);
-        
-        
+            num++;
+
+            
+        }
     }
-    
 }
