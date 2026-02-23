@@ -21,7 +21,7 @@ public class Ejercicio31 {
         
         //Con un bucle while busco los numeros
         while (contadorImpares < 3) {
-            int numero = (int) (Math.random() * 100) + 1; // 1 al 100
+            int numero = (int) (Math.random() * 101) + 1; // 1 al 100
             contadorTotal++;
 
             if (numero % 2 != 0) {
