@@ -16,7 +16,7 @@ public class ColeccionistasFiguras {
      * 
      */
         public static void mostrarMenu() {
-            System.out.println("Elige una opción");
+            System.out.println("Elige una opcion");
             System.out.println("1. Rellenar la vitrina de figuras");
             System.out.println("2. Mostrar todas las figuras de una coleccion determinada");
             System.out.println("3. Mostrar la figura mas valiosa");
@@ -37,7 +37,7 @@ public class ColeccionistasFiguras {
         
         
         /**
-         * Metodo para procesar la opción del usuario y hacer cada una de las opciones del menú
+         * Metodo para procesar la opción del usuario y hacer cada una de las opciones del menu
          * @param opcion
          * @param vitrina
          * @param sc 
@@ -48,7 +48,7 @@ public class ColeccionistasFiguras {
             for (int i = 0; i < vitrina.length; i++) {
                 for (int j = 0; j < vitrina[i].length; j++) {
 
-                    System.out.println("Introduce los datos para el estante " + (i + 1) + ", compartimento " + (j + 1));
+                    System.out.println("Introduce los datos para el estnte " + (i + 1) + ", compartimento " + (j + 1));
 
                     // Nombre
                     System.out.print("Nombre del personaje: ");
@@ -59,8 +59,8 @@ public class ColeccionistasFiguras {
                     double valor = sc.nextDouble();
                     sc.nextLine(); // limpiar buffer
 
-                    // Colección
-                    System.out.print("Colección a la que pertenece: ");
+                    // Coleccion
+                    System.out.print("Coleccion a la que pertenece: ");
                     String coleccion = sc.nextLine();
 
                     // Crear la figura y colocarla en la vitrina
@@ -90,7 +90,7 @@ public class ColeccionistasFiguras {
             }
 
             if (!encontrada) {
-                System.out.println("No hay figuras en la colección " + coleccionBuscada);
+                System.out.println("No hay figuras en la coleccion " + coleccionBuscada);
             }
 
             break;
@@ -105,7 +105,7 @@ public class ColeccionistasFiguras {
         }
             
     /**
-     * Crea una matriz bidemensional con 3 filas y 3 columnas y devuelve la matriz para usarla en otros métodos.
+     * Crea una matriz bidemensional con 3 filas y 3 columnas y devuelve la matriz para usarla en otros metodos.
      * @return 
      */
          public static Figura[][] crearVitrina() {
@@ -136,9 +136,9 @@ public class ColeccionistasFiguras {
 
                 for (int j = 0; j < vitrina[i].length; j++) {
                     if (vitrina[i][j] == null) {
-                        System.out.print("[ Vacío ] ");
+                        System.out.print("[ Vacio ] ");
                     } else {
-                        System.out.print("[" + vitrina[i][j] + "] "); // usa toString()
+                        System.out.print("[" + vitrina[i][j] + "] "); 
                     }
                 }
                 System.out.println();
@@ -151,21 +151,21 @@ public class ColeccionistasFiguras {
      */
     public static void main(String[] args) {
          
-        // 1️⃣ Crear la vitrina
+        //Creo la vitrina
         Figura[][] vitrina = crearVitrina();
-        inicializarVitrina(vitrina);
+            inicializarVitrina(vitrina);
 
-        Scanner sc = new Scanner(System.in);
-        int opcion;
+            Scanner sc = new Scanner(System.in);
+            int opcion;
 
-        // 2️⃣ Bucle principal del menú
-        do {
-            mostrarMenu();               // Muestra las opciones
-            opcion = elegirOpcion(sc);   // Lee la opción del usuario
-            procesarOpcion(opcion, vitrina, sc); // Ejecuta la acción correspondiente
-        } while (opcion != 4);
+            //Hago un bucle para mostrar el menu
+            do {
+                mostrarMenu();               
+                opcion = elegirOpcion(sc);   
+                procesarOpcion(opcion, vitrina, sc); 
+            } while (opcion != 4);
 
-        sc.close(); // Cerrar scanner al final
+            sc.close(); 
    
         }
         
