@@ -56,8 +56,7 @@ public class Ejercicio15 {
     public static void dividir(int num1, int num2){
 
         try{
-            if(num2 == 0){
-            }
+            
 
             System.out.println("Resultado: " + (num1 / num2));
 

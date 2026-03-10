@@ -13,16 +13,39 @@ import java.util.Scanner;
 public class Ejercicio7 {
     
     public static void ordenarCuatroNumeros(int w, int x, int y, int z) {
-    // Se hacen todas las comparaciones necesarias
+    int temp;
+    if (w > x) { 
+        temp = w;
+        w = x; 
+        x = temp; 
+    }
+    if (w > y) {
+         temp = w; 
+        w = y; 
+        y = temp; 
+    }
+    if (w > z) {
+        temp = w; 
+        w = z; 
+        z = temp; 
+    }
     
-    if (w > x) { int temp = w; w = x; x = temp; }
-    if (w > y) { int temp = w; w = y; y = temp; }
-    if (w > z) { int temp = w; w = z; z = temp; }
+    if (x > y) {
+        temp = x; 
+        x = y; 
+        y = temp; 
+    }
+    if (x > z) { 
+         temp = x; 
+        x = z; 
+        z = temp;
+    }
     
-    if (x > y) { int temp = x; x = y; y = temp; }
-    if (x > z) { int temp = x; x = z; z = temp; }
-    
-    if (y > z) { int temp = y; y = z; z = temp; }
+    if (y > z) { 
+         temp = y;
+        y = z; 
+        z = temp;
+    }
     
     System.out.println("Ordenados: " + w + " < " + x + " < " + y + " < " + z);
 }
