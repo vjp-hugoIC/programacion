@@ -76,7 +76,7 @@ public class Ejercicio20 {
     public static void sumarRespuestas (boolean respuesta1, boolean respuesta2) {
     
         //Declaro las variables de las notas y el total
-        int nota1, nota2, total;
+        int nota1=0, nota2=0, total;
         
         //Si las respuestas son correctas suma 5 puntos sino no suma
         if (respuesta1 == true) {
@@ -117,17 +117,17 @@ public class Ejercicio20 {
         respuesta1 = pedirRespuesta();
         
         //Compruebo la respuesta 1
-        comprobarRespuesta1(respuesta1);
+        boolean acierto1 = comprobarRespuesta1(respuesta1);
         
         //Le hago segunda pregunta al usuario y almaceno la respuesta
         System.out.println("2ª PREGUNTA: ¿Quién descubrió América?: ");
         respuesta2 = pedirRespuesta();
         
         //Compruebo las respuestas en los metodos
-        comprobarRespuesta2(respuesta2);
+        boolean acierto2 = comprobarRespuesta2(respuesta2);
         
         //Sumo las respuestas
-        sumarRespuestas(comprobarRespuesta1(respuesta1), comprobarRespuesta2(respuesta2));
+        sumarRespuestas(acierto1, acierto2);
         
         
     }
