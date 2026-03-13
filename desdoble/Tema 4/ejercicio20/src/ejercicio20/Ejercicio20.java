@@ -13,8 +13,8 @@ import java.util.Scanner;
 public class Ejercicio20 {
     
     //Declaro las respuestas como constantes
-    public static final String capitalEspaña = "Madrid";
-    public static final String descubrioAmerica = "Colón";
+    public static final String CAPITALESPANA = "Madrid";
+    public static final String DESCUBRIOAMERICA = "Colón";
     
     //Metodo para recoger la respuesta del usuario
     public static String pedirRespuesta() {
@@ -37,14 +37,14 @@ public class Ejercicio20 {
         boolean iguales;
         
         //Igualo la respùesta del usuario con la constante
-        iguales = respuesta1.equalsIgnoreCase(capitalEspaña);
+        iguales = respuesta1.equalsIgnoreCase(CAPITALESPANA);
         
         //Si coinciden estaria bien y sino no
         if (iguales==true) {
             
             System.out.println("Muy bien, respuesta correcta.");
         } else {
-            System.out.println("No es correcto. La respuesta correcta sería " + capitalEspaña);
+            System.out.println("No es correcto. La respuesta correcta sería " + CAPITALESPANA);
         }
         
         return iguales;
@@ -58,14 +58,14 @@ public class Ejercicio20 {
         boolean iguales;
         
         //Igualo la respùesta del usuario con la constante
-        iguales = respuesta1.equalsIgnoreCase(descubrioAmerica);
+        iguales = respuesta1.equalsIgnoreCase(DESCUBRIOAMERICA);
         
         //Si coinciden estaria bien y sino no
         if (iguales==true) {
             
             System.out.println("Muy bien, respuesta correcta.");
         } else {
-            System.out.println("No es correcto. La respuesta correcta sería " + descubrioAmerica);
+            System.out.println("No es correcto. La respuesta correcta sería " + DESCUBRIOAMERICA);
         }
         
         return iguales;
