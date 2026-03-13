@@ -17,13 +17,16 @@ public class Ejercicio19 {
      */
     public static void main(String[] args) {
         
+        //Declaro las variables y el scanner
         String diaSemana;
         boolean iguales;
         Scanner entrada = new Scanner(System.in);
         
+        //Le pido al usuario el dia de la semana
         System.out.println("Introduce un dia de la semana: ");
         diaSemana = entrada.nextLine();
         
+        //Comparo cada dia de la semana para determinmar que numero de la semana es
         iguales = diaSemana.equalsIgnoreCase("Lunes");
         if (iguales==true) {
             
