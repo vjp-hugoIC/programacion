@@ -27,7 +27,7 @@ public class Numero {
     }
     
     //Getters y Setters
-    public int getVaolr() {
+    public int getValor() {
         return valor;
     }
     
