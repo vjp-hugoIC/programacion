@@ -73,9 +73,9 @@ public class Asignatura {
     //Otros metodos
     public static void notaMedia(Asignatura a1, Asignatura a2, Asignatura a3, Asignatura a4, Asignatura a5, Asignatura a6) {
 
-    int media = (int)((a1.getNota() + a2.getNota() + a3.getNota() + a4.getNota() + a5.getNota() + a6.getNota()) / 6.0);
+        int media = (int)((a1.getNota() + a2.getNota() + a3.getNota() + a4.getNota() + a5.getNota() + a6.getNota()) / 6.0);
 
-    System.out.println("La nota media es: " + media);
+        System.out.println("La nota media es: " + media);
 }
     
     
