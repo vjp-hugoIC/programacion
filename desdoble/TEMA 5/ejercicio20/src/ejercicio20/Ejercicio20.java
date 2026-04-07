@@ -62,7 +62,7 @@ public class Ejercicio20 {
     //Opciones del menu
     public static void opciones (int num) {
         
-        Cuenta cuenta1;
+        Cuenta cuenta1 = null;
     
         switch (num) {
     

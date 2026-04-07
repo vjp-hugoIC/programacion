@@ -21,7 +21,7 @@ public class Cuenta {
     }
     
     //Parametrizado
-    public Cuenta(int saldo) {
+    public Cuenta(double saldo) {
     
         this.saldo = saldo;
     }
