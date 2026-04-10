@@ -76,7 +76,7 @@ public class Ejercicio4 {
         gato2.habitat();
         gato2.nCientifico();
         System.out.println("");
-        
+                
         // TODO code application logic here
     }
     
