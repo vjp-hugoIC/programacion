@@ -46,13 +46,13 @@ public class Suma extends Calculadora{
     //ToString
     @Override
     public String toString() {
-        return "Suma{" + "sumando=" + sumando + '}';
+        return super.toString() + "Suma{" + "sumando=" + sumando + '}';
     }
     
     //Otros metodos
     @Override
     public void realizarOperacion() {
-        System.out.println("El resutado de la operacion es: " + getNumero() + sumando);
+        System.out.println("El resutado de la operacion es: " + (getNumero() + sumando));
     }
     
     
