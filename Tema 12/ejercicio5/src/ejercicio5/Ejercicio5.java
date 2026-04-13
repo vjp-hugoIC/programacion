@@ -123,9 +123,9 @@ public class Ejercicio5 {
         switch(pedirOpcion()) {
         
             case 1: 
-                pedirNombre();
-                pedirEdad();
-                pedirTelf();
+                try {
+                escribirFichero(AGENDA, pedirNombre(), pedirEdad(), pedirTelf());
+                }
         }
         
         
