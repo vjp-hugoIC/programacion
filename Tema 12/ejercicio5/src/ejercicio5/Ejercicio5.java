@@ -79,7 +79,8 @@ public class Ejercicio5 {
         System.out.println("ESCRIBIENDO EN EL FICHERO");
 
         try (
-                FileWriter fw = new FileWriter(nombre); PrintWriter pw = new PrintWriter(fw);) {
+                FileWriter fw = new FileWriter(fichero, true); 
+                PrintWriter pw = new PrintWriter(fw);) {
             pw.println(nombre);
             pw.println(edad);
             pw.println(telefono);
@@ -111,12 +112,16 @@ public class Ejercicio5 {
      */
     public static void main(String[] args) {
 
+        int opcion = 0;
+        
         do {
         //Muestro las opciones del menu al usuario
         opciones();
 
         try {
-            switch (pedirOpcion()) {
+            opcion = pedirOpcion();
+            
+            switch (opcion) {
 
                  case 1:
 
@@ -145,7 +150,7 @@ public class Ejercicio5 {
         }
         
         
-        } while(pedirOpcion() >= 2);
+        } while(opcion != 2);
         // TODO code application logic here
     }
 
