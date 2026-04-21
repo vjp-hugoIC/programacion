@@ -94,9 +94,10 @@ public class Ejercicio5 {
         System.out.println("LEYENDO FICHERO");
 
         try (
-                FileReader fr = new FileReader(fichero); BufferedReader br = new BufferedReader(fr);) {
+                FileReader fr = new FileReader(fichero); 
+                BufferedReader br = new BufferedReader(fr);) {
 
-            String linea = br.readLine();
+                String linea = br.readLine();
 
             while (linea != null) {
 
@@ -150,7 +151,7 @@ public class Ejercicio5 {
         }
         
         
-        } while(opcion != 2);
+        } while(opcion != 3);
         // TODO code application logic here
     }
 
