@@ -101,5 +101,41 @@ public class Becario {
     }
     
     
+    //Otros metodos
+    public int calcularBeca() {
+    
+        int beca = 1500;
+        
+        if(suspensos == 0) {
+        
+            beca = 0;
+        }
+        
+        if(ingresoAnual == 1200) {
+        
+            beca = beca + 500;
+        }
+        
+        if(edad < 23) {
+        
+            beca = beca + 200;
+        }
+        
+        if(suspensos == 0) {
+        
+            beca = beca + 500;
+        } else if (suspensos == 1) {
+        
+            beca = beca + 200;
+        }
+        
+        if(!rFamiliar) {
+    
+            beca = beca + 1000;
+        }
+        
+        return beca;
+    }
+    
     
 }
