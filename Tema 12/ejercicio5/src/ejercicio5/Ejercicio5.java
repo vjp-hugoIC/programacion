@@ -88,7 +88,7 @@ public class Ejercicio5 {
         }
 
     }
-
+    
     //Metodo para leer el fichero
     public static void leerFichero(String fichero) throws FileNotFoundException, IOException {
         System.out.println("LEYENDO FICHERO");
@@ -107,7 +107,7 @@ public class Ejercicio5 {
         }
 
     }
-
+    
     /**
      * @param args the command line arguments
      */

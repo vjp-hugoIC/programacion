@@ -43,14 +43,15 @@ public class Ejercicio6 {
 
         return array;
     }
-
+    
     //Metodo para escribir los 100 numeros pares en el fichero
     public static void escribirFichero(String fichero, int[] array) throws FileNotFoundException, IOException {
 
         System.out.println("Escribiendo fichero...");
 
         try (
-                FileWriter fw = new FileWriter(fichero, true); PrintWriter pw = new PrintWriter(fw);) {
+                FileWriter fw = new FileWriter(fichero, true); 
+                PrintWriter pw = new PrintWriter(fw);) {
 
             for (int i = 0; i < array.length; i++) {
 
@@ -58,7 +59,7 @@ public class Ejercicio6 {
             }
         }
     }
-
+    
     //Metodo para leer el fichero
     public static void leerFichero(String fichero) throws FileNotFoundException, IOException {
 
@@ -76,7 +77,7 @@ public class Ejercicio6 {
             }
         }
     }
-
+    
     /**
      * @param args the command line arguments
      */
